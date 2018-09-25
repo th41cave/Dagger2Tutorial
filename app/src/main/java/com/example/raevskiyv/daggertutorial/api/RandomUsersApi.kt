@@ -1,4 +1,4 @@
-package com.example.raevskiyv.daggertutorial.interfaces
+package com.example.raevskiyv.daggertutorial.api
 
 import com.example.raevskiyv.daggertutorial.model.RandomUsers
 

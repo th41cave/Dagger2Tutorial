@@ -45,12 +45,7 @@ class RandomUserAdapter : RecyclerView.Adapter<RandomUserAdapter.RandomUserViewH
     }
 
     inner class RandomUserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var textView: TextView
-        var imageView: ImageView
-
-        init {
-            textView = itemView.findViewById(R.id.name)
-            imageView = itemView.findViewById(R.id.image)
-        }
+        var textView: TextView = itemView.findViewById(R.id.name)
+        var imageView: ImageView = itemView.findViewById(R.id.image)
     }
 }
