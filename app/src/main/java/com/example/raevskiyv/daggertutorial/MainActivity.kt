@@ -36,25 +36,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initViews()
         beforeDagger2()
-        //afterDagger();
-//        afterActivityLevelComponent()
     }
-
-//    private fun afterActivityLevelComponent() {
-//        val mainActivityComponent = DaggerMainActivityComponent.builder()
-//                .mainActivityModule(MainActivityModule(this))
-//                .randomUserComponent(RandomUserApplication.get(this).getRandomUserApplicationComponent())
-//                .build()
-//        mainActivityComponent.injectMainActivity(this)
-//    }
-//
-//    fun afterDagger() {
-//        val daggerRandomUserComponent = DaggerRandomUserComponent.builder()
-//                .contextModule(ContextModule(this))
-//                .build()
-//        picasso = daggerRandomUserComponent.getPicasso()
-//        randomUsersApi = daggerRandomUserComponent.getRandomUserService()
-//    }
 
     private fun beforeDagger2() {
         val gsonBuilder = GsonBuilder()
